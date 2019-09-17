@@ -46,7 +46,7 @@ print("Total params: ", config.total_params)
 X_train = X_train.astype('float32') / 255.
 X_test = X_test.astype('float32') / 255.
 
-datagen = ImageDataGenerator(width_shift_range=0.1)
+datagen = ImageDataGenerator(width_shift_range=0.1, rotation_range=20)
 datagen.fit(X_train)
 
 
